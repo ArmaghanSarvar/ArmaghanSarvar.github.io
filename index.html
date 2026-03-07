@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Armaghan Sarvar — Bioinformatics Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-name">Armaghan Sarvar</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="resume.pdf" target="_blank" class="nav-cta">Resume ↗</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-tag">Bioinformatics · Machine Learning · Computational Genomics</div>
+      <h1>Armaghan<br><em>Sarvar</em></h1>
+      <p class="hero-sub">
+        Bioinformatics Scientist at the Aparicio Lab, BC Cancer Research Centre,
+        working at the intersection of deep learning and cancer genomics.
+      </p>
+      <div class="hero-links">
+        <a href="mailto:asarvar@bcgsc.ca" class="btn-primary">Get in touch</a>
+        <a href="https://github.com/ArmaghanSarvar" target="_blank" class="btn-outline">GitHub</a>
+        <a href="https://www.linkedin.com/in/armaghan-sarvar-5a8898168/" target="_blank" class="btn-outline">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="dna-grid">
+        <div class="dna-col" style="--delay:0s"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="dna-col" style="--delay:0.15s"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="dna-col" style="--delay:0.3s"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="dna-col" style="--delay:0.45s"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="dna-col" style="--delay:0.6s"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="dna-col" style="--delay:0.75s"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="dna-col" style="--delay:0.9s"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="dna-col" style="--delay:1.05s"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Computational biology <em>meets</em> machine learning</h2>
+          <p>
+            I am a Bioinformatics Scientist in the <strong>Aparicio Lab</strong> at BC Cancer Research Centre,
+            where I develop deep learning frameworks and scalable pipelines for cancer genomics. My work spans
+            ctDNA deconvolution, six-letter methylation sequencing, chromatin profiling (CUT&amp;Tag), and DLP+ single-cell copy number analysis.
+          </p>
+          <p>
+            I hold an M.Sc. in Bioinformatics from the University of British Columbia (GPA 95.3/100)
+            and a B.Sc. in Computer Engineering from Amirkabir University of Technology.
+          </p>
+          <p>
+            Outside the lab I mentor the next generation of computational biology researchers
+            at the UBC National Canadian Medical Datathon (2025 &amp; 2026).
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Peer-reviewed publications &amp; conference talks</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years at BC Cancer Research Centre</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">95.3</span>
+            <span class="stat-label">M.Sc. GPA (out of 100)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">Top 0.4%</span>
+            <span class="stat-label">Nationwide university entrance exam</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Research</div>
+      <h2>Current work at the Aparicio Lab</h2>
+      <p class="section-intro">
+        My research focuses on building machine learning tools that make sense of large-scale genomic and epigenomic data
+        in the context of cancer biology.
+      </p>
+      <div class="research-grid">
+
+        <div class="research-card">
+          <div class="research-icon">⬡</div>
+          <h3>ctDNA Deconvolution</h3>
+          <p>Developing a framework to deconvolve circulating tumor DNA from plasma methylation data to infer tissue-of-origin and tumor fraction for minimal residual disease detection.</p>
+          <div class="research-tags"><span>Methylation</span><span>Deep Learning</span><span>cfDNA</span></div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-icon">◈</div>
+          <h3>CUT&amp;Tag Signal Modeling</h3>
+          <p>Building end-to-end pipelines using Enformer and Borzoi transformer architectures for large-scale chromatin profiling and regulatory element characterization.</p>
+          <div class="research-tags"><span>Enformer</span><span>Borzoi</span><span>Epigenomics</span></div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-icon">◇</div>
+          <h3>Six-Letter Methylation Sequencing</h3>
+          <p>Designing 5mC/hmC-aware feature extraction methods for six-letter (Biomodal) methylation sequencing, enabling epigenomic characterization at single-base resolution.</p>
+          <div class="research-tags"><span>5mC/hmC</span><span>Biomodal</span><span>Epigenetics</span></div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-icon">○</div>
+          <h3>DLP+ Single-Cell Copy Number</h3>
+          <p>Analyzing DLP+ (Direct Library Preparation Plus) single-cell whole-genome sequencing data from CX5461-treated cells to identify copy number–based predictors of drug response.</p>
+          <div class="research-tags"><span>DLP+</span><span>scDNA-seq</span><span>Drug Response</span></div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-icon">△</div>
+          <h3>G-Quadruplex Characterization</h3>
+          <p>Developing deep learning models to characterize G-quadruplex regulatory structures and their role in genome stability and gene regulation.</p>
+          <div class="research-tags"><span>Regulatory Genomics</span><span>Deep Learning</span></div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-icon">□</div>
+          <h3>Mutational Signature Analysis</h3>
+          <p>HDP-based mutational signature decomposition and SBS signature analysis of nanopore sequencing data to identify mutational patterns at single-nucleotide resolution.</p>
+          <div class="research-tags"><span>Signatures</span><span>Nanopore</span><span>HDP</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-label">Publications &amp; Presentations</div>
+      <h2>Research output</h2>
+      <div class="pub-list">
+
+        <div class="pub-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-body">
+            <div class="pub-venue">RECOMB Conference · Istanbul, Turkey · <em>Invited Talk</em></div>
+            <h3>Misassembly Detection using Stash: A Data Structure based on Stochastic Tile Hashing</h3>
+            <div class="pub-authors">Armaghan Sarvar, Lauren Coombe, René Warren, Inanc Birol</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2022</div>
+          <div class="pub-body">
+            <div class="pub-venue">ISMB Conference · Madison, Wisconsin · <em>Invited Talk</em></div>
+            <h3>Stash: A Data Structure based on Stochastic Tile Hashing</h3>
+            <div class="pub-authors">Armaghan Sarvar, Lauren Coombe, René Warren, Inanc Birol</div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2022</div>
+          <div class="pub-body">
+            <div class="pub-venue">Applied Intelligence Journal</div>
+            <h3>Defense against Adversarial Examples based on Wavelet Domain Analysis</h3>
+            <div class="pub-authors">Armaghan Sarvar, Maryam Amirmazlaghani</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="talks-section">
+        <h3>Selected Oral Presentations</h3>
+        <div class="talk-list">
+          <div class="talk-item"><span class="talk-title">Machine Learning in Rare Disease Diagnosis</span><span class="talk-date">2022</span></div>
+          <div class="talk-item"><span class="talk-title">Approaches in Integrating Multi-omics Data</span><span class="talk-date">2022</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2>Selected work</h2>
+      <div class="project-grid">
+
+        <a href="https://github.com/ArmaghanSarvar" target="_blank" class="project-card">
+          <div class="project-header">
+            <span class="project-label">Regulatory Genomics</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3>CUT&amp;Tag Modeling with Enformer &amp; Borzoi</h3>
+          <p>Applied transformer-based sequence-to-function models (Enformer, Borzoi) for regulatory genomics and chromatin accessibility prediction at scale.</p>
+          <div class="project-tags"><span>Enformer</span><span>Borzoi</span><span>Transformers</span></div>
+        </a>
+
+        <a href="https://github.com/ArmaghanSarvar" target="_blank" class="project-card">
+          <div class="project-header">
+            <span class="project-label">Deep Learning</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3>Image-to-Image Translation via cGAN</h3>
+          <p>Conditional Generative Adversarial Network pipeline for colorization of black-and-white photographs using paired image training.</p>
+          <div class="project-tags"><span>PyTorch</span><span>GAN</span><span>Computer Vision</span></div>
+        </a>
+
+        <a href="https://github.com/ArmaghanSarvar" target="_blank" class="project-card">
+          <div class="project-header">
+            <span class="project-label">Representation Learning</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3>Deep Convolutional Autoencoder</h3>
+          <p>Trained on the CelebA dataset with latent space exploration and visualization using the T-SNE dimensionality reduction algorithm.</p>
+          <div class="project-tags"><span>PyTorch</span><span>Autoencoder</span><span>T-SNE</span></div>
+        </a>
+
+        <a href="https://github.com/ArmaghanSarvar" target="_blank" class="project-card">
+          <div class="project-header">
+            <span class="project-label">Biomedical Imaging</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3>U-Net for Image Segmentation</h3>
+          <p>Implemented the U-Net deep learning architecture for pixel-wise segmentation of biological membrane image data.</p>
+          <div class="project-tags"><span>U-Net</span><span>Segmentation</span><span>TensorFlow</span></div>
+        </a>
+
+        <a href="https://github.com/ArmaghanSarvar" target="_blank" class="project-card">
+          <div class="project-header">
+            <span class="project-label">Evolutionary Computation</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3>RBF Network with Evolution Strategy</h3>
+          <p>Trained RBF neural networks using the DEAP library via evolutionary optimization of the network cost function.</p>
+          <div class="project-tags"><span>Python</span><span>DEAP</span><span>Evolutionary AI</span></div>
+        </a>
+
+      </div>
+      <div class="projects-cta">
+        <a href="https://github.com/ArmaghanSarvar" target="_blank" class="btn-outline">View all on GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label">Skills &amp; Tools</div>
+      <h2>Technical toolkit</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>R</span><span>Bash</span><span>Java</span><span>C/C++</span><span>Matlab</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>ML &amp; Deep Learning</h3>
+          <div class="skill-tags">
+            <span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>Hugging Face</span><span>NumPy</span><span>Pandas</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Bioinformatics</h3>
+          <div class="skill-tags">
+            <span>Snakemake</span><span>GATK</span><span>samtools</span><span>bcftools</span><span>minimap2</span><span>BWA</span><span>STAR</span><span>DESeq2</span><span>HMMCopy</span><span>bedtools</span><span>Mosdepth</span><span>IGV</span><span>Biopython</span><span>gnomAD</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Sequencing Platforms</h3>
+          <div class="skill-tags">
+            <span>Oxford Nanopore</span><span>PacBio HiFi</span><span>DLP+</span><span>CUT&amp;Tag</span><span>Biomodal</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Data &amp; Visualization</h3>
+          <div class="skill-tags">
+            <span>Matplotlib</span><span>Seaborn</span><span>Power BI</span><span>Shiny</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Infrastructure</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>Linux</span><span>HPC</span><span>MySQL</span><span>PostgreSQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>Armaghan Sarvar</strong><br>
+        Bioinformatics Scientist · BC Cancer Research Centre<br>
+        Vancouver, Canada
+      </div>
+      <div class="footer-links">
+        <a href="mailto:asarvar@bcgsc.ca">Email</a>
+        <a href="https://github.com/ArmaghanSarvar" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/armaghan-sarvar-5a8898168/" target="_blank">LinkedIn</a>
+        <a href="resume.pdf" target="_blank">Resume PDF</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
