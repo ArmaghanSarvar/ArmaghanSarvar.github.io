@@ -30,7 +30,8 @@
       <h1>Armaghan<br><em>Sarvar</em></h1>
       <p class="hero-sub">
         Bioinformatics Scientist at the Aparicio Lab, BC Cancer Research Centre,
-        working at the intersection of deep learning and cancer genomics.
+        developing deep learning frameworks, large-scale data analysis pipelines,
+        and data science solutions for cancer genomics.
       </p>
       <div class="hero-links">
         <a href="mailto:asarvar@bcgsc.ca" class="btn-primary">Get in touch</a>
@@ -57,19 +58,19 @@
       <div class="section-label">About</div>
       <div class="about-grid">
         <div class="about-text">
-          <h2>Computational biology <em>meets</em> machine learning</h2>
+          <h2>Cancer genomics <em>powered by</em> machine learning</h2>
           <p>
             I am a Bioinformatics Scientist in the <strong>Aparicio Lab</strong> at BC Cancer Research Centre,
-            where I develop deep learning frameworks and scalable pipelines for cancer genomics. My work spans
-            ctDNA deconvolution, six-letter methylation sequencing, chromatin profiling (CUT&amp;Tag), and DLP+ single-cell copy number analysis.
+            where I develop deep learning frameworks, large-scale data analysis pipelines, and data science solutions for cancer genomics.
+          </p>
+          <p>
+            My work spans cfDNA deconvolution for cancer detection, six-letter methylation sequencing analysis and feature extraction,
+            chromatin profiling (CUT&amp;Tag and ChIP-seq), G-quadruplex characterization and detection,
+            DLP+ single-cell copy number analysis, CRISPR screen analysis, and pharmacogenomic drug effect modeling.
           </p>
           <p>
             I hold an M.Sc. in Bioinformatics from the University of British Columbia (GPA 95.3/100)
             and a B.Sc. in Computer Engineering from Amirkabir University of Technology.
-          </p>
-          <p>
-            Outside the lab I mentor the next generation of computational biology researchers
-            at the UBC National Canadian Medical Datathon (2025 &amp; 2026).
           </p>
         </div>
         <div class="about-stats">
@@ -78,7 +79,7 @@
             <span class="stat-label">Peer-reviewed publications &amp; conference talks</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num">2+</span>
+            <span class="stat-num">3+</span>
             <span class="stat-label">Years at BC Cancer Research Centre</span>
           </div>
           <div class="stat-card">
@@ -99,51 +100,51 @@
       <div class="section-label">Research</div>
       <h2>Current work at the Aparicio Lab</h2>
       <p class="section-intro">
-        My research focuses on building machine learning tools that make sense of large-scale genomic and epigenomic data
-        in the context of cancer biology.
+        My research focuses on building machine learning tools and scalable data analysis pipelines
+        to decode large-scale genomic and epigenomic data in the context of cancer biology.
       </p>
       <div class="research-grid">
 
         <div class="research-card">
           <div class="research-icon">⬡</div>
-          <h3>ctDNA Deconvolution</h3>
-          <p>Developing a framework to deconvolve circulating tumor DNA from plasma methylation data to infer tissue-of-origin and tumor fraction for minimal residual disease detection.</p>
-          <div class="research-tags"><span>Methylation</span><span>Deep Learning</span><span>cfDNA</span></div>
+          <h3>mod-squares: ctDNA Deconvolution</h3>
+          <p>Developing mod-squares, a framework for cfDNA deconvolution from plasma methylation data. The pipeline spans feature extraction, data cleaning, and statistical and ML-based deconvolution to infer tissue-of-origin and tumor fraction for minimal residual disease detection.</p>
+          <div class="research-tags"><span>Methylation</span><span>cfDNA</span><span>MRD</span><span>ML</span></div>
         </div>
 
         <div class="research-card">
           <div class="research-icon">◈</div>
-          <h3>CUT&amp;Tag Signal Modeling</h3>
-          <p>Building end-to-end pipelines using Enformer and Borzoi transformer architectures for large-scale chromatin profiling and regulatory element characterization.</p>
-          <div class="research-tags"><span>Enformer</span><span>Borzoi</span><span>Epigenomics</span></div>
+          <h3>CUT&amp;Tag &amp; ChIP-seq Signal Modeling</h3>
+          <p>Building end-to-end pipelines using Enformer and Borzoi transformer architectures for large-scale chromatin profiling and regulatory element characterization from CUT&amp;Tag and ChIP-seq data.</p>
+          <div class="research-tags"><span>Enformer</span><span>Borzoi</span><span>CUT&amp;Tag</span><span>ChIP-seq</span></div>
         </div>
 
         <div class="research-card">
           <div class="research-icon">◇</div>
-          <h3>Six-Letter Methylation Sequencing</h3>
-          <p>Designing 5mC/hmC-aware feature extraction methods for six-letter (Biomodal) methylation sequencing, enabling epigenomic characterization at single-base resolution.</p>
-          <div class="research-tags"><span>5mC/hmC</span><span>Biomodal</span><span>Epigenetics</span></div>
+          <h3>Biomodal 6-Letter Methylation Sequencing</h3>
+          <p>Designing 5mC/hmC-aware feature extraction methods for Biomodal's six-letter sequencing technology, enabling simultaneous detection of cytosine modifications at single-base resolution in cancer cell lines.</p>
+          <div class="research-tags"><span>5mC/hmC</span><span>Biomodal</span><span>Epigenomics</span></div>
         </div>
 
         <div class="research-card">
           <div class="research-icon">○</div>
-          <h3>DLP+ Single-Cell Copy Number</h3>
-          <p>Analyzing DLP+ (Direct Library Preparation Plus) single-cell whole-genome sequencing data from CX5461-treated cells to identify copy number–based predictors of drug response.</p>
-          <div class="research-tags"><span>DLP+</span><span>scDNA-seq</span><span>Drug Response</span></div>
+          <h3>Direct Library Preparation+ Single-Cell WGS</h3>
+          <p>Analyzing DLP+ (Direct Library Preparation+) single-cell whole-genome sequencing data from CX5461-treated cells to identify copy number–based predictors of pharmacological drug response across clonal populations.</p>
+          <div class="research-tags"><span>DLP+</span><span>scWGS</span><span>Pharmacogenomics</span></div>
         </div>
 
         <div class="research-card">
           <div class="research-icon">△</div>
           <h3>G-Quadruplex Characterization</h3>
-          <p>Developing deep learning models to characterize G-quadruplex regulatory structures and their role in genome stability and gene regulation.</p>
-          <div class="research-tags"><span>Regulatory Genomics</span><span>Deep Learning</span></div>
+          <p>Developing deep learning models to characterize G-quadruplex regulatory structures and their role in genome stability.</p>
+          <div class="research-tags"><span>G4</span><span>Deep Learning</span><span>Regulatory Genomics</span></div>
         </div>
 
         <div class="research-card">
           <div class="research-icon">□</div>
-          <h3>Mutational Signature Analysis</h3>
-          <p>HDP-based mutational signature decomposition and SBS signature analysis of nanopore sequencing data to identify mutational patterns at single-nucleotide resolution.</p>
-          <div class="research-tags"><span>Signatures</span><span>Nanopore</span><span>HDP</span></div>
+          <h3>CRISPR Screen Analysis</h3>
+          <p>Designing computational workflows to normalize and visualize guide enrichment patterns in single-cell perturbation screens, enabling identification of context-specific genetic vulnerabilities in cancer cells.</p>
+          <div class="research-tags"><span>CRISPR</span><span>Perturbation</span><span>Single-Cell</span></div>
         </div>
 
       </div>
@@ -252,9 +253,6 @@
         </a>
 
       </div>
-      <div class="projects-cta">
-        <a href="https://github.com/ArmaghanSarvar" target="_blank" class="btn-outline">View all on GitHub ↗</a>
-      </div>
     </div>
   </section>
 
@@ -267,42 +265,42 @@
         <div class="skill-group">
           <h3>Languages</h3>
           <div class="skill-tags">
-            <span>Python</span><span>R</span><span>Bash</span><span>Java</span><span>C/C++</span><span>Matlab</span>
+            <span>Python</span><span>R</span><span>Bash</span><span>Java</span><span>C/C++</span><span>MATLAB</span><span>Typst</span>
           </div>
         </div>
 
         <div class="skill-group">
           <h3>ML &amp; Deep Learning</h3>
           <div class="skill-tags">
-            <span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>Hugging Face</span><span>NumPy</span><span>Pandas</span>
+            <span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>NumPy</span><span>Pandas</span><span>SciPy</span>
           </div>
         </div>
 
         <div class="skill-group">
           <h3>Bioinformatics</h3>
           <div class="skill-tags">
-            <span>Snakemake</span><span>GATK</span><span>samtools</span><span>bcftools</span><span>minimap2</span><span>BWA</span><span>STAR</span><span>DESeq2</span><span>HMMCopy</span><span>bedtools</span><span>Mosdepth</span><span>IGV</span><span>Biopython</span><span>gnomAD</span>
+            <span>Snakemake</span><span>GATK</span><span>samtools</span><span>bcftools</span><span>minimap2</span><span>BWA</span><span>DESeq2</span><span>HMMcopy</span><span>bedtools</span><span>Mosdepth</span><span>IGV</span><span>Biopython</span><span>pysam</span><span>pyBigWig</span><span>methylKit</span><span>QUAST</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <h3>Sequencing Platforms</h3>
+          <h3>Sequencing &amp; Assay Platforms</h3>
           <div class="skill-tags">
-            <span>Oxford Nanopore</span><span>PacBio HiFi</span><span>DLP+</span><span>CUT&amp;Tag</span><span>Biomodal</span>
+            <span>Oxford Nanopore</span><span>PacBio HiFi</span><span>DLP+</span><span>CUT&amp;Tag</span><span>ChIP-seq</span><span>Biomodal 6-letter</span>
           </div>
         </div>
 
         <div class="skill-group">
           <h3>Data &amp; Visualization</h3>
           <div class="skill-tags">
-            <span>Matplotlib</span><span>Seaborn</span><span>Power BI</span><span>Shiny</span>
+            <span>Matplotlib</span><span>Seaborn</span><span>Shiny</span><span>Power BI</span><span>Jupyter</span><span>Modality</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <h3>Infrastructure</h3>
+          <h3>Infrastructure &amp; Workflow</h3>
           <div class="skill-tags">
-            <span>Git</span><span>Linux</span><span>HPC</span><span>MySQL</span><span>PostgreSQL</span>
+            <span>Git</span><span>Linux</span><span>HPC</span><span>Slurm</span><span>MySQL</span><span>PostgreSQL</span><span>Azure Blob Storage</span><span>Nextflow</span><span>Conda</span><span>Singularity</span>
           </div>
         </div>
 
