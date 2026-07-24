@@ -1,42 +1,59 @@
 // Scroll reveal
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(el => {
-    if (el.isIntersecting) {
-      el.target.classList.add('visible');
-    }
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+document
+  .querySelectorAll(
+    ".research-card, .project-card, .skill-group, .pub-item, .stat-card, .about-text, .about-stats, .section-intro, h2"
+  )
+  .forEach((element) => {
+    element.classList.add("reveal");
+    observer.observe(element);
   });
-}, { threshold: 0.1 });
 
-document.querySelectorAll('.research-card, .project-card, .skill-group, .pub-item, .stat-card, .about-text, .about-stats, .section-intro, h2').forEach(el => {
-  el.classList.add('reveal');
-  observer.observe(el);
+// Mobile navigation toggle
+const toggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector("nav");
+
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+}
+
+// Close mobile navigation when a link is selected
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    nav?.classList.remove("open");
+  });
 });
 
-// Mobile nav toggle
-const toggle = document.querySelector('.nav-toggle');
-const nav    = document.querySelector('nav');
-toggle.addEventListener('click', () => nav.classList.toggle('open'));
+// Highlight active navigation link while scrolling
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
 
-// Close nav on link click (mobile)
-document.querySelectorAll('.nav-links a').forEach(a => {
-  a.addEventListener('click', () => nav.classList.remove('open'));
-});
+window.addEventListener("scroll", () => {
+  let currentSection = "";
 
-// Active nav link on scroll
-const sections = document.querySelectorAll('section[id]');
-const navLinks  = document.querySelectorAll('.nav-links a[href^="#"]');
-
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(section => {
+  sections.forEach((section) => {
     if (window.scrollY >= section.offsetTop - 120) {
-      current = section.getAttribute('id');
+      currentSection = section.getAttribute("id") || "";
     }
   });
-  navLinks.forEach(link => {
-    link.style.color = '';
-    if (link.getAttribute('href') === `#${current}`) {
-      link.style.color = 'var(--accent)';
+
+  navLinks.forEach((link) => {
+    link.style.color = "";
+
+    if (link.getAttribute("href") === `#${currentSection}`) {
+      link.style.color = "var(--accent)";
     }
   });
 });
